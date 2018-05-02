@@ -1,0 +1,5 @@
+Order deny,allow
+Deny from all
+<FilesMatch "(icon|cart|logo|bioptron-logo5).png">
+allow from all
+</FilesMatch>
