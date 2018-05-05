@@ -10,7 +10,7 @@ You can add 100 images plus 200 additional images to your items per hour. I thin
 Before use, be sure to read the documentation
 
 #### Documentation
-All images must be in the folder `image/catalog/products`
+All images must be in the folder ```image/catalog/products```
 Files support any type of **png, jpg, jpeg** etc.
 
 **The file name must be**
