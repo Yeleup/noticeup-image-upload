@@ -9,6 +9,29 @@ You can add 100 images plus 200 additional images to your items per hour. I thin
 
 Before use, be sure to read the documentation
 
+#### Documentation
+All images must be in the folder `image/catalog/products`
+Files support any type of **png, jpg, jpeg** etc.
+
+**The file name must be**
+* 100.jpg 		  //Main Image
+* 100 (2).jpg 	//Second image
+* 100 (n).jpg 	//N images
+
+By default, regular expressions are `/([0-9]+)\s.([0-9]+)./`
+
+You can register your regular expression on the page
+```admin/controller/extension/module/noticeup_upload_image.php line 85```
+
+**Series of steps**
+* All files are uploaded to a folder `image/catalog/products`
+* We go into the admin panel and press the yellow button and wait for the list of reports
+```diff
+- Warning! When you click on the button, the table ".DB_PREFIX."product_image is completely cleared ("TRUNCATE TABLE" .DB_PREFIX. "product_image").
++ First use a backup
+```
+
+
 -----
 
 ### RU
@@ -33,10 +56,11 @@ Before use, be sure to read the documentation
 Вы можете прописать свою регулярное выражения на странице
 ```admin/controller/extension/module/noticeup_upload_image.php строка 85```
 
-Все файлы заружаем в папку `image/catalog/products`
+**Порядок действии**
+* Все файлы заружаем в папку `image/catalog/products`
+* Заходим в админку нажимаем желтую кнопку и ждем список отчетов
 
-Заходим в админку нажимаем желтую кнопку и ждем список отчетов
 ```diff
 - Предупреждение! При клике на кнопку, таблица ".DB_PREFIX."product_image очищается полностью ("TRUNCATE TABLE ".DB_PREFIX."product_image").
-+ Используйте после бэкапа
++ Используйте сначала бэкап
 ```
