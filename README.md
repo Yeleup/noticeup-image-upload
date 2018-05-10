@@ -14,7 +14,7 @@ All images must be in the folder ```image/catalog/products```
 Files support any type of **png, jpg, jpeg** etc.
 
 **The file name must be**
-* 100.jpg 		  //Main Image
+* 100.jpg 		  //Main Image, here 100 is the product id
 * 100 (2).jpg 	//Second image
 * 100 (n).jpg 	//N images
 
@@ -47,7 +47,7 @@ You can register your regular expression on the page
 Файлы поддерживают любой тип **png, jpg, jpeg** и.т.д 
 
 **Название файла должен быть**
-* 100.jpg 		  //Главное изображения
+* 100.jpg 		  //Главное изображения, здесь 100 это id продукта
 * 100 (2).jpg 	//Второе изображения
 * 100 (n).jpg 	//N изображения
 
